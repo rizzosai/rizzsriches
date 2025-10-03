@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rizzo's Gift Explosion - Laugh & Profit!</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6fa; }
+    .hero { background: linear-gradient(120deg, #232f3e 0%, #3a5068 100%); color: #fff; padding: 3rem 1rem 2rem 1rem; text-align: center; position: relative; }
+    .hero h1 { font-size: 2.7rem; margin-bottom: 0.5rem; }
+    .hero h2 { font-size: 1.5rem; margin-bottom: 1.5rem; color: #b8c7d1; }
+    .hero .badges { margin: 1.5rem 0; }
+    .badge { display: inline-block; background: #b8c7d1; color: #232f3e; border-radius: 20px; padding: 0.5rem 1.2rem; margin: 0 0.3rem; font-weight: bold; font-size: 1rem; box-shadow: 0 2px 8px rgba(35,47,62,0.10); }
+    .timer { font-size: 1.1rem; background: #e3e8ee; color: #232f3e; display: inline-block; padding: 0.5rem 1rem; border-radius: 8px; margin-top: 1rem; }
+    .story, .cta, .gifts, .testimonial { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 24px rgba(35,47,62,0.08); }
+    .story h2, .gifts h2, .cta h2, .testimonial h2 { color: #232f3e; }
+    .story p { font-size: 1.1rem; margin-bottom: 1.2rem; }
+    .laugh { color: #3a5068; font-weight: bold; }
+    .gifts-list { display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; margin: 2rem 0; }
+    .gift-item { background: #e3e8ee; border: 2px solid #b8c7d1; border-radius: 8px; padding: 1rem 1.5rem; min-width: 180px; text-align: center; font-weight: bold; box-shadow: 0 2px 8px rgba(35,47,62,0.06); }
+    .gift-icon { font-size: 2rem; display: block; margin-bottom: 0.5rem; }
+    .cta { text-align: center; }
+    .cta button { background: linear-gradient(90deg, #232f3e 0%, #3a5068 100%); color: #fff; border: none; border-radius: 6px; padding: 1.2rem 3rem; font-size: 1.3rem; cursor: pointer; margin-top: 1.5rem; font-weight: bold; box-shadow: 0 2px 8px rgba(35,47,62,0.18); transition: background 0.2s; }
+    .cta button:hover { background: #3a5068; color: #b8c7d1; }
+    .testimonial { text-align: center; font-style: italic; color: #444; }
+    .testimonial .author { margin-top: 1rem; font-weight: bold; color: #232f3e; }
+    .as-seen { text-align: center; margin: 2rem 0; }
+    .as-seen img { height: 32px; margin: 0 0.7rem; opacity: 0.7; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.5rem; }
+      .story, .cta, .gifts, .testimonial { padding: 1rem; }
+      .gifts-list { flex-direction: column; align-items: center; }
+    }
+  </style>
+  <script>
+    // Simple countdown timer for urgency
+    window.onload = function() {
+      var timer = document.getElementById('timer');
+      var seconds = 900; // 15 minutes
+      function updateTimer() {
+        var min = Math.floor(seconds / 60);
+        var sec = seconds % 60;
+        timer.textContent = 'Special bonus expires in: ' + min + 'm ' + (sec < 10 ? '0' : '') + sec + 's';
+        if (seconds > 0) { seconds--; setTimeout(updateTimer, 1000); }
+        else { timer.textContent = 'Bonus expired!'; }
+      }
+      updateTimer();
+    };
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <h1>Welcome to Rizzo's Riches Community!</h1>
+    <h2>Where Only Affiliates Get In, and Everyone Wins</h2>
+    <div class="badges">
+  <span class="badge">Affiliate-Only Access</span>
+  <span class="badge">40% Affiliate / 10% Owner</span>
+  <span class="badge">$49/mo AU + $10 Admin</span>
+    </div>
+  <div style="font-size:1.1rem; margin:1.5rem 0; background:#e3e8ee; color:#232f3e; display:inline-block; padding:0.7rem 1.5rem; border-radius:8px; font-weight:bold;">No outsiders—only those invited by a member can join. Every new member you bring in, you get 40% of the $49 fee, I get 10% (to keep the lights on!), and $10 goes to admin/hosting. Real community, real rewards!</div>
+    <div class="timer" id="timer">Special bonus expires in: 15m 00s</div>
+  </div>
+  <div class="as-seen">
+    <span>As seen on:</span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/YouTube_social_white_squircle.svg" alt="YouTube" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="Facebook" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google.png" alt="Google" />
+  </div>
+  <div class="story">
+    <h2>Why Go It Alone? Join the Rizzo's Riches Movement!</h2>
+    <p>Ever tried to make money online by yourself? It’s like selling invisible socks—nobody sees you, and nobody buys! <span class="laugh">(That’s 1!)</span></p>
+    <p>But what if you had a whole crew behind you, sharing your site on Facebook, Twitter, YouTube, Instagram, Pinterest, and more? Suddenly, you’re everywhere! <span class="laugh">(That’s 2!)</span></p>
+    <p>At Rizzo’s Riches, we’re building a real community. When you join for just <strong>$49/month (AUD)</strong>, your website gets featured on all my social media, my website, and the whole Rizzo’s network. The more you stick with us, the more eyes you get—win-win! <span class="laugh">(That’s 3!)</span></p>
+    <p>And here’s the magic: as long as you stay subscribed, you get free advertising, more traffic, and I’ll keep teaching you new ways to grow. We’re in this together—no more going solo! <span class="laugh">(That’s 4!)</span></p>
+    <p>So, if you want to laugh, learn, and get seen by thousands, Rizzo’s Riches is your new home. Let’s make magic happen—together! <span class="laugh">(That’s 5!)</span></p>
+  </div>
+  <div class="testimonial">
+    <h2>What People Are Saying</h2>
+    <p>“I laughed so hard, I nearly dropped my phone. And then I made my first $100 online—thanks, Rizzo!”</p>
+    <div class="author">— Jamie L., Happy Customer</div>
+  </div>
+  <div class="gifts">
+    <h2>What You Get as a Rizzo’s Riches Member</h2>
+    <div class="gifts-list">
+    <div class="gift-item"><span class="gift-icon">🎁</span>Exclusive eBook: Real Ways to Make Money Online</div>
+    <div class="gift-item"><span class="gift-icon">💡</span>Affiliate Marketing Cheat Sheet</div>
+    <div class="gift-item"><span class="gift-icon">🛠️</span>Top 10 Passive Income Tools</div>
+    <div class="gift-item"><span class="gift-icon">🌐</span>Automated Simple Website Built For You (with your name & niche!)</div>
+    <div class="gift-item"><span class="gift-icon">�</span>Personalized Keyword Research & SEO Plan</div>
+    <div class="gift-item"><span class="gift-icon">📝</span>Step-by-step Notepad Instructions for Growing Your Site</div>
+    <div class="gift-item"><span class="gift-icon">�🔒</span>Bonus: Secret Resource Vault</div>
+    <div class="gift-item"><span class="gift-icon">🌐</span>Your website featured on all my social media & site</div>
+    <div class="gift-item"><span class="gift-icon">🤝</span>Community support & ongoing training</div>
+    <div class="gift-item"><span class="gift-icon">💸</span>90% recurring commission for every member you bring in</div>
+    <div class="gift-item"><span class="gift-icon">🔗</span>Access to our exclusive, members-only chat room</div>
+    <div class="gift-item"><span class="gift-icon">🤖</span>24/7 AI Chatbot for instant help—no waiting for support!</div>
+    <div class="gift-item"><span class="gift-icon">🚀</span>For $1000 & $5000 Tiers: Full "How I Automated My Business with AI" Guide + 1-on-1 Coaching</div>
+    <div class="gift-item"><span class="gift-icon">🎉</span>And more surprises from Rizzo!</div>
+    </div>
+    <p><strong>Warning:</strong> Your phone or computer may be so full of Rizzo’s gifts and traffic, you’ll need a bigger hard drive!</p>
+  </div>
+  <div class="cta">
+  <h2>Ready to Join Rizzo’s Riches?</h2>
+  <p><strong>Don’t wait!</strong> This is a true community—no outsiders, no spam, just real people helping each other succeed. Bring in a friend, earn <b>90% recurring commission</b> of their fee, and get all the benefits. Every member gets a website, keyword research, and a personal action plan—done for you! Higher tiers get my full AI automation playbook and coaching. Plus, our AI chatbot and open chat room mean you’re never alone on your journey!</p>
+    <!-- Stripe Payment Integration Placeholder -->
+    <form action="/your-stripe-endpoint" method="POST" style="margin:2rem 0;">
+      <input type="hidden" name="affiliate_id" value="{AFFILIATE_ID}" />
+      <button type="submit" style="background:linear-gradient(90deg, #232f3e 0%, #3a5068 100%); color:#fff; border:none; border-radius:6px; padding:1.2rem 3rem; font-size:1.3rem; cursor:pointer; font-weight:bold; box-shadow:0 2px 8px rgba(35,47,62,0.18);">Join Rizzo’s Riches Now</button>
+    </form>
+    <p style="font-size:0.95rem; color:#888;">Payments are securely processed by Stripe. Affiliate links and tracking are built in—just share your link to earn your share!</p>
+  </div>
+  <div class="gifts" style="margin-top:2rem;">
+    <h2>Community Chat Room & 24/7 AI Support</h2>
+    <p>Our exclusive chat room is open to all members—talk about your wins, your struggles, or just hang out. No bars, no limits, just real talk. And if you need help, our AI chatbot is always online to answer your questions, so you can focus on growing (and relaxing) while the community and automation do the work!</p>
+  </div>
+
+  <div class="gifts" style="margin-top:2rem; background:#e3ffe3; border:2px solid #6c6;">
+    <h2 style="color:#228B22;">100% Money-Back Guarantee</h2>
+    <p>Try Rizzo’s Riches risk-free! If you’re not absolutely thrilled with your website, keyword plan, or the community, just let us know within 30 days and you’ll get a full refund. No questions asked, no hard feelings. That’s how confident we are in the value you’ll get!</p>
+  </div>
+
+  <!-- The backlinking and automation is now woven throughout the page as part of the Rizzo's Riches community offer. -->
+</body>
+</html>
